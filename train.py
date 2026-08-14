@@ -41,3 +41,8 @@ accuracy = accuracy_score(y_test, y_pred)
 
 print("Model trained successfully!")
 print("Accuracy:", accuracy)
+
+import joblib
+
+joblib.dump(model, "churn_model.pkl")
+print("Model saved successfully!")
